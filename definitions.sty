@@ -1,0 +1,135 @@
+%------------------------------------------------------------------------------
+% dependencies
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{stmaryrd}
+\usepackage{fancyhdr}
+
+
+%-------------------------------------------------------------------------------
+% logic
+
+%\newcommand{\iff}{\Longleftrightarrow}
+\newcommand{\liff}{\longleftrightarrow}
+
+
+%------------------------------------------------------------------------------
+% numbers
+
+\newcommand{\Reals}{\Class{R}}
+\newcommand{\Rationals}{\Class{Q}}
+\newcommand{\Integers}{\Class{Z}}
+\newcommand{\Naturals}{\Class{N}}
+\newcommand{\Complex}{\Class{C}}
+\newcommand{\Polynomials}{\mathrm{P}}
+\newcommand{\im}{\,\mathbf{\mathit{i}}\,}
+\newcommand{\class}[1]{\llbracket{#1}\rrbracket}
+\renewcommand{\im}{\text{\textbf{\textit{i}}}}
+\renewcommand{\Re}{\mathop{\mathrm{\mathbf{Re}}}}
+\renewcommand{\Im}{\mathop{\mathrm{\mathbf{Re}}}}
+\newcommand{\Arg}{\mathop{\mathrm{Arg}}}
+\newcommand{\conj}[1]{\overline{#1}}
+
+
+%------------------------------------------------------------------------------
+% set theory
+
+\newcommand{\Class}[1]{\mathbb{#1}}
+\newcommand{\Set}[1]{#1}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\struct}[1]{\left\langle\,{#1}\,\right\rangle}
+\newcommand{\Union}{\bigcup}
+\newcommand{\union}{\cup}
+\newcommand{\Inter}{\bigcap}
+\newcommand{\inter}{\cap}
+\newcommand{\into}{\longrightarrow}
+\newcommand{\meet}{\wedge}
+\newcommand{\join}{\vee}
+\newcommand{\comp}{\circ}
+\newcommand{\relata}{\vartriangleleft}
+\newcommand{\Relata}{\mathord{\relata}}
+\newcommand{\Null}{\varnothing}
+\newcommand{\order}[1]{\left\lvert{#1}\right\rvert}
+\newcommand{\image}[1]{\left\lVert{#1}\right\rVert}
+\newcommand{\prop}[1]{\llbracket{#1}\rrbracket}
+\newcommand{\dom}{\operatorname{dom}}
+\newcommand{\ran}{\operatorname{ran}}
+\newcommand{\proj}{\operatorname{proj}}
+
+
+%------------------------------------------------------------------------------
+% group theory
+
+\newcommand{\setcomp}{\hat{\bullet}}
+\newcommand{\Group}[1]{\mathsf{#1}}
+\newcommand{\gen}{\operatorname{gen}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\op}{\mathbin{\bullet}}
+\newcommand{\e}{\mathrm{\mathbf{e}}}
+\newcommand{\id}{\mathrm{\mathbf{e}}}
+\newcommand{\zero}{\mathrm{\mathbf{0}}}
+\newcommand{\isomorphic}{\cong}
+\newcommand{\Order}{O}
+\newcommand{\Orb}{\operatorname{Orb}}
+\newcommand{\Stab}{\operatorname{Stab}}
+\newcommand{\Fix}{\operatorname{Fix}}
+\newcommand{\Kernel}{\operatorname{Ker}}
+\newcommand{\Image}{\operatorname{Im}}
+
+
+%-------------------------------------------------------------------------------
+% linear algebra
+
+\newenvironment{equations}{\begin{cases}}{\end{cases}}
+%\newcommand{\det}[1]{\operatorname{det}}
+\newcommand{\Vector}[1][v]{\mathbf{#1}}
+\newcommand{\Matrix}[1][m]{\mathsf{#1}}
+\newcommand{\vi}{\Vector[i]}
+\newcommand{\vj}{\Vector[j]}
+\newcommand{\vk}{\Vector[k]}
+%\newcommand{\dim}{\mathop{dim}}
+
+\newcommand{\noop}{\phantom{!}}
+\newcommand{\rowop}[2]{{\scriptstyle {#1} \longmapsfrom {#2}}}
+
+\newenvironment{dmatrix}[1]
+{\left(\begin{array}{#1}}
+{\end{array}\right)}
+
+\makeatletter % adds column formatting to matrix environments
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+
+%------------------------------------------------------------------------------
+% numeric
+
+\newcommand{\abs}[1]{\left|{#1}\right|}
+\newcommand{\argmax}{\operatorname{argmax}}
+
+
+
+%------------------------------------------------------------------------------
+% calculus
+
+%\newcommand{\derivative}[2][]{{\textstyle{ \partial {#1} \over \partial {#2} }}}
+\newcommand{\derivative}[2][]{{{ \partial\, {#1} \over \partial\, {#2} }}}
+\newcommand{\approaches}[2][]{
+    \smash{\;\overset{{\phantom{I}}{\scriptsize #1}}\rightarrow{#2}}
+}
+
+%-------------------------------------------------------------------------------
+% statistics
+
+\newcommand{\expect}[1]{\mathbb{E}\left\lbrack{#1}\right\rbrack}
+
+%-------------------------------------------------------------------------------
+% misc.
+
+\newcommand{\justify}[1]{\text{\small{#1}}}
+
+%-------------------------------------------------------------------------------
+
